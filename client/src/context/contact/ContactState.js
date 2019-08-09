@@ -39,7 +39,7 @@ const ContactState = props => {
     ],
     current: null,
     filtered: null
-  };
+  }
 
   const [state, dispatch] = useReducer(contactReducer, initialState);
 
@@ -97,6 +97,6 @@ const ContactState = props => {
       {props.children}
     </ContactContext.Provider>
   );
-};
+}
 
 export default ContactState;
